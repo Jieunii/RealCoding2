@@ -63,15 +63,24 @@
   
 4. gcc main.c func.o -o main
 
-    * main.c 파일을 컴파일하여 오브젝트 파일을 만들고 func.o 파일과 링킹하여 main이라는 실행 프로그램을 만든다
+    * main.c 파일을 컴파일하여 오브젝트 파일을 만들고 func.o 파일과 링킹하여 main이라는 실행 프로그램을 만든다.
+  
+5. gcc -D
+   
+   * 매크로를 외부에서 define할 때 사용한다.
+   * ex) gcc -D PRINT_ID => 소스 내에서 #define PRINT_ID를 추가한 것과 동일하다.
+  
+6. gcc -U
+
+   * -D와 반대로 소스 파일 내에 #undef [매크로] 옵션을 추가한 것과 동일하다.
 
 ### three_files 컴파일
-1. gcc -DPRINT_ID로 컴파일 할 때
+1. gcc -D PRINT_ID로 컴파일 할 때
    
-   * gcc -DPRINT_ID main.c func.c
+   * gcc -D PRINT_ID main.c func.c
    * PRINT_ID가 정의되어 있으므로 학번 출력
 
-2. gcc -DPRINT_ID로 컴파일 하지 않을 때
+2. gcc -D PRINT_ID로 컴파일 하지 않을 때
 
    * gcc main.c func.c
    * PRINT_ID가 정의되어 있지 않으므로 이름 출력
