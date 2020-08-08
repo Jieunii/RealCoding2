@@ -214,5 +214,5 @@
 7. 디폴트 확장자규칙(Default Suffix Rules)의 이용  
    ![make7](/uploads/4e3b187a18d5f578b28af2f1cec71280/make7.PNG)
 8. make clean 후 make
-   * make clean 했을 때 설정한 파일들이 지워지고 make를 
+   * make clean 했을 때 설정한 파일들이 지워지고 make를 했을 때 설정 파일들을 컴파일한다.
    ![makeclean_make](/uploads/7433da7c8dbcfdc40f57f1e05f95b77a/makeclean_make.PNG)
