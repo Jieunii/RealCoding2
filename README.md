@@ -115,9 +115,9 @@
 
 ### gcc 컴파일 옵션 연습
 1. gcc -E
-   * 전처리까지만 실행한 결과를 화면에 출력한다.
-    ![gcc-E(1)](https://user-images.githubusercontent.com/54850435/89533294-2b9c9a00-d82e-11ea-9d6e-f170b127536c.PNG)
-   * 01.option-E.i 생성
+   * 전처리까지만 실행한 결과를 화면에 출력한다.  
+    ![gcc-E(1)](https://user-images.githubusercontent.com/54850435/89533294-2b9c9a00-d82e-11ea-9d6e-f170b127536c.PNG)  
+   * 01.option-E.i 생성  
     ![gcc-E(2)](https://user-images.githubusercontent.com/54850435/89533368-4969ff00-d82e-11ea-879d-9c3c28f3c29c.PNG)
 
 
