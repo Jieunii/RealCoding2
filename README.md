@@ -196,7 +196,6 @@
    * $< : 의존 파일(전제 조건) 중 첫번째 파일명
    * $^ : 현재 모든 의존 파일들의 명단
   
-4. 
 
 ### Makefile 작성 실습 과정
 1. Makefile 형식  
@@ -205,14 +204,14 @@
    ![make2](/uploads/9d701192aea00d8fe458105fb6120295/make2.PNG)
 3. 매크로(Macro, Variable)의 이용  
    ![make3](/uploads/02da1b99ea3eed380e1b7715ea8c2a75/make3.PNG)
-4. 내장 매크로(Internal Macro)의 이용
+4. 내장 매크로(Internal Macro)의 이용  
    ![make4](/uploads/bdd7a9dba3dcb3937dbcc8386fc00d1d/make4.PNG)
 5. 내장 매크로(Pre-definced Macro)의 이용  
    ![make5](/uploads/1f1285d02099c4a8435c900737c7d4a0/make5.PNG)
-6. 확장자규칙(Suffix Rules)의 이용 & 확장자(Suffix)의 치환 이용 
+6. 확장자규칙(Suffix Rules)의 이용 & 확장자(Suffix)의 치환 이용  
    ![make6](/uploads/46ba746c8c95efe7909a05cb642570f6/make6.PNG)
 7. 디폴트 확장자규칙(Default Suffix Rules)의 이용  
    ![make7](/uploads/4e3b187a18d5f578b28af2f1cec71280/make7.PNG)
 8. make clean 후 make
-   * make clean 했을 때 설정한 파일들이 지워지고 make를 했을 때 설정 파일들을 컴파일한다.
+   * make clean 했을 때 설정한 파일들이 지워지고 make를 했을 때 설정 파일들을 컴파일한다.  
    ![makeclean_make](/uploads/7433da7c8dbcfdc40f57f1e05f95b77a/makeclean_make.PNG)
