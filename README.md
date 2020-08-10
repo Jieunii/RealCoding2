@@ -156,18 +156,18 @@
 ## Personal Project4 : Makefile 만들기(2020.08.07)
 
 ### make란?
-* <span style="color:red">maintain, update, and regenerate group of progrmas</span>
+* **maintain, update, and regenerate group of progrmas**
 * 명령을 생성하는 유틸리티, 프로그램 그룹을 유지하는데 필요한 유틸리티
-* <span style="color:red">많은 프로그램 모듈들로 구성된 프로그램을 효율적으로 유지하고 일관성 있게 관리하도록 도와주는 도구</span>
+* **많은 프로그램 모듈들로 구성된 프로그램을 효율적으로 유지하고 일관성 있게 관리하도록 도와주는 도구**
 * 소스 수정 시 유관 파일들을 재컴파일 & 링크하는 반복적인 작업을 간단하게 처리함
 
 ### make의 동작
-* <span style="color:red">make는 여러 파일들 간의 의존성을 저장하고 수정된 파일에 연관된 소스 파일들만을 재컴파일 하도록 해줌</span>
+* **make는 여러 파일들 간의 의존성을 저장하고 수정된 파일에 연관된 소스 파일들만을 재컴파일 하도록 해줌**
 * make 유틸리티는 이전에 make명령을 실행했던 시점 이후에 이뤄진 프로젝트 작업들에 대해서만 갱신 작업을 수행함
 * 개별 항목은 순서에 따라 실행되지만 전체 내용은 순서를 따르지 않음
 
 ### make 필요성
-* <span style="color:red">프로그램 개발 및 유지보수의 편리성을 지원</span>
+* **프로그램 개발 및 유지보수의 편리성을 지원**
 * 명령어의 배치 처리 기능, 자주 쓰는 명령어를 자동화할 수 있음
 * 자동적으로 특정 프로그램 수행을 원할 때
 
@@ -179,7 +179,7 @@
     ```
     * Target : 빌드 대상 이름. 최종적으로 생성해내는 파일명
     * Dependencies or prerequisities : 빌드 대상이 의존하는 Target이나 파일 목록. 이곳에 나열된 대상들을 먼저 만들고 빌드 대상 생성
-    * Recipe : 빌드 대상을 생성하는 명령. <span style="color:red">각 줄 시작에 반드시 Tab문자로 된 Indent가 있어야 한다.</span>
+    * Recipe : 빌드 대상을 생성하는 명령. 각 줄 시작에 반드시 `Tab`문자로 된 Indent가 있어야 한다.
   
 2. 내장 매크로(Pre-defined Macro) - Variables Used by Implicit Rules
    * CC : 컴파일러
