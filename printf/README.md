@@ -58,5 +58,5 @@
 * `< file`
   * 파일로부터 표준 입력을 받도록 redirection
 * ex)
-  * ./a.out < input_data > output_data
+  * ./a.out < input_data > output_data  
     입력값은 input_data에서 받고 output_data에 출력된다.
