@@ -23,3 +23,12 @@
 |Array size can be set at runtime||O|O|
 |Can be resized|||O|
 
+### Noun-Adjective Form
+1. int const a
+2. int const * a
+3. int* const a
+4. int* const *a
+5. int const * *a
+6. int const* const* a
+
+
