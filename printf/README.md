@@ -8,7 +8,7 @@
 * 표준 출력은 프로그램에서 출력되는 데이터의 표준적인 방향으로 크게 stdout과 stderr로 구분
 
 ### stdin, stdout, stderr
-1. stdin(standart input)
+1. stdin(standart input)-0
    * 리눅스에서 표준 입력은 file descriptor가 0으로 설정
    * C, C++
         ```C
@@ -19,7 +19,7 @@
         //C++
         std::cin
         ```
-2. stdout(standard output)
+2. stdout(standard output)-1
    * 정상적인 출력이 반환되는 방향
    * 리눅스에서 표준 출력은 file descriptor가 1로 설정
    * C, C++
@@ -31,7 +31,7 @@
         //C++
         std::cout
         ```
-3. stderr(standard error)
+3. stderr(standard error)-2
    * 프로그램의 비정상 종료시에 반환되는 방향
    * 리눅스에서 표준 출력은 file descriptor가 2로 설정
    * C, C++
@@ -43,6 +43,8 @@
         //C++
         std::cerr
         ```
+
+||||
 
 ## Redirection
 * 표준 입력이나 표준 출력을 키보드나 화면으로 하는 것이 아니라 파일로 입력받거나 파일로 출력하도록 변경하는 것
