@@ -14,6 +14,14 @@
 * `컴파일러와 인터프리터의 차이`
 * `gcc 컴파일 옵션`
 
-### Project 4(2020.08.10)
+### Project 4(2020.08.07)
+* `Makefile 만들기`
+
+### Project 5(2020.08.10)
 * `RaspberryPi에 LED연결`
 
+### Project 6(2020.08.11)
+* `Pointer`
+  
+### Project 7(2020.08.12)
+* `Thread`
