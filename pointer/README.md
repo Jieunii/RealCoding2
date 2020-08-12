@@ -53,6 +53,13 @@
 ### Noun-Adjective Form
 1. int const a  
    constant integer
+   ```C
+   int const pi = 314;
+   int *a = &pi;
+
+   int *const a; //이렇게 하면 변하지 않는다.
+   int *const a[] = &pi; //배열일때
+   ```
 2. int const * a  
    (variable) pointer to a constant integer
 3. int* const a  
