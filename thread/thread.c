@@ -9,17 +9,22 @@ void * sthread1(void *arg)
 {
 	int sum=0;
     float avg;
+	printf("====sthread1 start====\n");
 	for(int i=0; i<=(int)arg; i++) {
 		sum += scores[i];
 	}
     avg = sum / 30.0;
     printf("합 : %d, 평균 : %f\n", sum, avg);
+	printf("====sthread1 end====\n");
+
 	pthread_exit(arg);
 }
 
 void * sthread2(void *arg)
 {
     int key, i, j;
+
+	printf("====sthread2 start====\n");
 	for(i=1;i<(int)arg;i++)
 	{
 		key = scores[i];
@@ -33,6 +38,8 @@ void * sthread2(void *arg)
     for(i=0;i<(int)arg;i++){
         printf("%2d등 : %d\n", i+1, scores[i]);
     }
+	printf("====sthread2 end====\n");
+
 	pthread_exit(arg);
 }
 
