@@ -31,21 +31,18 @@ int main(int argc, char *argv[])
         wiringPiSetup();
         
         if (gno == 1) {
-            led_red_task();
             if (pthread_create(&tid_G, NULL, led_green_task, (void*)count) != 0)
             {
                 perror("pthread_create");
                 exit(1);
             }
         } else if (gno == 2) {
-            led_red_task();
             if (pthread_create(&tid_Y, NULL, led_yellow_task, (void*)count) != 0)
             {
                 perror("pthread_create");
                 exit(1);
             }
         } else if(gno == 3){
-            led_red_task();
             if (pthread_create(&tid_Y, NULL, led_yellow_task, (void*)count) != 0)
             {
                 perror("pthread_create");
@@ -57,11 +54,8 @@ int main(int argc, char *argv[])
                 exit(1);
             }
         }
+        led_red_task();
     }
     pthread_exit(NULL);
     return 0;
 }
-
-
-
-
