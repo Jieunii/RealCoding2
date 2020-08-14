@@ -1,4 +1,6 @@
 *.out
-test
 *.o
+main
+test
 threadTest
+led_main
