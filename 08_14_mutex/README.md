@@ -69,15 +69,54 @@
         cmake --build build/ --target clean
         ```
 * 실행 예시 및 예상
-  * ./led_main
-       빨간색 LED만 1초 간격으로 10 on/off 반복
-  * ./led_main 1 5
-       빨간색 LED만 1초 간격으로 10 on/off 반복 + 초록색 LED는 2초 간격으로 5회 on/off
-  * ./led_main 2 7
-        빨간색 LED만 1초 간격으로 10 on/off 반복 + 노란색 LED는 3초 간격으로 7회 on/off
-  * ./led_main 3 6
-        빨간색 LED만 1초 간격으로 10 on/off 반복 + 초록 LED는 2초 간격으로, 노란색 LED는 3초 간격으로 각각 6회 on/off
+  * ./led_main  
+    빨간색 LED만 1초 간격으로 10 on/off 반복
+  * ./led_main 1 5  
+    빨간색 LED만 1초 간격으로 10 on/off 반복 + 초록색 LED는 2초 간격으로 5회 on/off
+  * ./led_main 2 7  
+    빨간색 LED만 1초 간격으로 10 on/off 반복 + 노란색 LED는 3초 간격으로 7회 on/off
+  * ./led_main 3 6  
+    빨간색 LED만 1초 간격으로 10 on/off 반복 + 초록 LED는 2초 간격으로, 노란색 LED는 3초 간격으로 각각 6회 on/off
 * 실행 결과
+  * ./build/led_main 2 7
+    ```text
+    RED ON!
+    YELLOW ON!
+    RED OFF!
+    RED ON!
+    YELLOW OFF!
+    RED OFF!
+    RED ON!
+    RED OFF!
+    YELLOW ON!
+    RED ON!
+    RED OFF!
+    RED ON!
+    YELLOW OFF!
+    RED OFF!
+    RED ON!
+    RED OFF!
+    YELLOW ON!
+    RED ON!
+    RED OFF!
+    RED ON!
+    YELLOW OFF!
+    RED OFF!
+    RED ON!
+    RED OFF!
+    YELLOW ON!
+    RED ON!
+    RED OFF!
+    YELLOW OFF!
+    YELLOW ON!
+    YELLOW OFF!
+    YELLOW ON!
+    YELLOW OFF!
+    YELLOW ON!
+    YELLOW OFF!
+    ```  
+    ![led_main_2_7](/uploads/5371bf3edccf76290717e89e8e522fa5/led_main_2_7.mp4)
+    
   * ./build/led_main 3 6
     ```text
     YELLOW ON!
