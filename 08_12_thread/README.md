@@ -115,3 +115,5 @@ Main end!
 30등 : 1
 ```
 sthread2가 sthread1보다 연산량이 많아 늦게 끝나는 것을 볼 수 있다.
+
+### 2.mymutexthread.c
