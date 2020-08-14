@@ -25,3 +25,6 @@
   
 ### Project 7(2020.08.12)
 * `Thread`
+
+### Project 8(2020.08.14)
+* `ledThreads`
