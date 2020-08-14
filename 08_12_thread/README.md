@@ -81,8 +81,11 @@ make
  89
  73
 Main start!
+====sthread1 start====
 합 : 1837, 평균 : 61.233334
+====sthread1 end====
 Main end!
+====sthread2 start====
  1등 : 100
  2등 : 99
  3등 : 96
@@ -113,7 +116,7 @@ Main end!
 28등 : 9
 29등 : 4
 30등 : 1
+====sthread2 end====
 ```
 sthread2가 sthread1보다 연산량이 많아 늦게 끝나는 것을 볼 수 있다.
 
-### 2.mymutexthread.c
