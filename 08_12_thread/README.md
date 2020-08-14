@@ -30,6 +30,10 @@
         ```C
         void pthread_exit(void *rval ptr);
         ```
+    * pthread_self : thread의 ID를 리턴한다. 다양한 pthread 함수는 스레드 ID를 사용하여 동작한다.(pthread_join(), pthread_detach(), pthread_cancel(), pthread_kill() 등)
+        ```C
+        pthread_t pthread_self(void)
+        ```
 
 
 ## 과제
