@@ -1,0 +1,18 @@
+OBJS := func.o main.o
+
+test : $(OBJS)
+	gcc -o $@ $^
+
+func.o : func.c
+	gcc -c $?
+
+main.o : main.c
+	gcc -c $*.c
+
+#dummy target
+clean :
+	-rm $(OBJS)
+	rm test
+
+dep :
+	gccmakedep func.c main.c
