@@ -1,15 +1,18 @@
 # Personal Project5 : RaspberryPi에 LED 연결(2020.08.10)
 
-## GPIO
+## 1. GPIO
 
-### GPIO란?
+### 1.1 GPIO란?
 * General Purpose Input/Output
 * 단일 마이크로 프로레서와 같이 입출력(Input/Output) 신호를 제어할 수 있는 포트
 * 사용자가 직접 회로를 구성하고 프로그래밍하여 라즈베리파이의 GPIO를 다룰 수 있다.
 
-### GPIO 명령어
+### 1.2 GPIO 명령어
 1. gpio readall
-   * gpio map 확인
+   * gpio map 확인  
+      ![gpioreadall](/uploads/3debd5de9da10778b41fcc8ded3cd65e/gpioreadall.PNG)  
+      * BCM 열의 번호가 회로도에 나와있는 GPIO 핀 번호를 나타냈다.
+      * wPi 열의 핀 번호가 wiringPi 라이브러리를 사용할 때의 실제 번호이다. (우리는 wPi를 사용한다.)
    * 각 핀의 현재 입/출력방향의 상태와 핀에 입력된 전압(0 or 1)등을 표시해준다.
 2. gpio -h
    * gpio 명령어 및 정보 확인
@@ -23,12 +26,14 @@
    * LED를 출력할 수 있도록 설정했으니, 불빛이 들어오도록 설정해야 한다.
    * ex) gpio -g write 29 1 => 29번 핀에 연결한 LED의 불빛이 들어온다.
    * ex) gpio -g write 29 0 => 29번 핀에 연결한 LED의 불빛이 꺼진다.
+6. gpio toggle 1
+   * 하나의 설정값으로부터 다른 값으로 전환한다.
 
-## 회로 구성 
+## 2. 회로 구성 
 * 준비물 : 라즈베리 파이, T자형 코블러, Breadboard(빵판), 빵판용 점퍼 와이어(전선), LED, 고정 저항기(레지스터)  
 ![연결상태](/uploads/99a8130d152cc09e8ea8bb14e08ac592/연결상태.jpg)
 
-## ledTest.c
+### 2.1 ledTest.c
 1. wiringPi.h 헤더파일을 추가시킨다.
     ```C
     #include <wiringPi.h>
@@ -56,56 +61,21 @@
    delay(500);
    ```
 
-## 실행 결과
+### 2.2 실행 결과
 * gcc ledTest.c -lwiringPi  
   ![실행방법](/uploads/5b2f627378d14e2cabd312597155daa2/실행방법.PNG)  
   ![5번깜빡](/uploads/0343b31a2a20a4f52388483f47bf1ecc/5번깜빡.mp4)
   
+## 3. 01.led_wpi_st.c & 03.led_mem1_st.c
 
-
-
-
-## GPIO
-
-### GPIO란
-
-
-
-
-
-
-gpio toggle 1
-pi@raspberrypi:~ $ gpio toggle 1
-pi@raspberrypi:~ $ gpio toggle 1
-pi@raspberrypi:~ $ gpio toggle 1
-pi@raspberrypi:~ $ gpio toggle 1
-pi@raspberrypi:~ $ gpio toggle 1
-pi@raspberrypi:~ $ gpio toggle 1
-pi@raspberrypi:~ $ gpio toggle 1
-pi@raspberrypi:~ $
-pi@raspberrypi:~ $ gpio read 1
-0
-pi@raspberrypi:~ $ gpio toggle 1
-pi@raspberrypi:~ $ gpio read 1
-1
-pi@raspberrypi:~ $ gpio write 1 0
-pi@raspberrypi:~ $ gpio read 1
-0
-pi@raspberrypi:~ $ gpio read 1
-
-### 실행방법
-gcc 01.led_spi_st.c -lwiringPi
-./a.out 1
-
-gcc 03.led_mem1_st.c -o 03
-sudo ./03
-
-### sudo -i vs sudo su cs sudo su -
-switch user
-
-su kim : 현재 pio계정에 모든 환경변수를 그대로 쓸때
-su -kim : kim에 oriented된 환경변수를 쓸때
-
-### ls -F
-@ : link
-\*는 실행가능한 파일
+### 3.1 실행방법
+1. 01.led_wpi_st.c
+   ```C
+   gcc 01.led_wpi_st.c -lwiringPi
+   ./a.out 1
+   ```
+2. 03.led_mem1_st.c
+   ```C
+   gcc 03.led_mem1_st.c -o 03
+   sudo ./03
+   ```
