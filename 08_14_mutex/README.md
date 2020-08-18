@@ -1,8 +1,19 @@
 # Personal Project8 : Thread(2020.08.14)
 
-## Multi-thread
+## 1. Multi-tasking
 
-### Multi-thread란
+### 1.1 Multi-tasking이란
+* 여러 개의 task가 동시에 실행되는 것
+* 운영체제의 스케줄링에 의해 번갈아 가면서 수행한다.
+* 빠른 속도로 조금씩 번갈아 가면서 task들을 처리하여 user가 느끼기에는 동시에 처리되는 것처럼 보인다.
+* Multi-tasking의 스케줄링 방식
+  1. Multi-programming
+  2. Time-sharing
+  3. Real-time
+
+## 2. Multi-thread
+
+### 2.1 Multi-thread란
 * 한 프로그램 내에서 둘 이상의 스레드를 동시에 실행하는 것
 * 장점
   * 프로세스 내의 메모리를 공유함
@@ -10,13 +21,13 @@
 * 단점
   * 공유 데이터에 대한 경쟁조건이 발생
 
-### 스레드 제어 system call API
+### 2.2 스레드 제어 system call API
 * int pthread_create(pthread_t *thread, const pthread_attr_t *attr, void *(*start)(void *), void *arg)
 * void pthread_exit(void *retval)
 * pthread_t pthread_self(void)
 * int pthread_equal(pthread_t t1, pthread_t t2)
 
-### 스레드 동기화 제어 system call API
+### 2.3 스레드 동기화 제어 system call API
 * pthread_mutex_init
   * mutex를 동적으로 초기화
   * 성공하면 0 return, 에러가 발생하면 에러번호(양수) return
@@ -45,9 +56,9 @@
   ```
 
 
-## 과제
+## 3. 과제
 
-### 3개의 LED를 제어하는 응용 메인 코드 작성하기
+### 3.1 3개의 LED를 제어하는 응용 메인 코드 작성하기
 * 실행 조건
   * 빨간색 LED는 1초 간격으로 on/off
   * 초록색 LED는 2초 간격으로 on/off
