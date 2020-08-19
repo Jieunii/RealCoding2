@@ -6,7 +6,7 @@
 * 소프트웨어 개발 과정에서 발생할 수 있는 오류들을 가정하고, 그러한 오류들을 발견해 내는 활동
 * IEEE애서의 SW 테스트 정의 : 수동이나 자동으로 시스템을 시험 작동시키고 평가하는 작업으로 명시된 요구를 잘 만족하는지, 즉 예상된 결과와 실제 결과와의 차이를 인식하기 위한 목적을 가진다.
 * 동작 실행 여부에 따라 Static Testing과 Dynamic Testing으로 나눠질 수 있고, 내부 구조 파악 여부에 따라 Black-Box Testing과 White-Box Testing으로 나눠질 수 있다.  
-![swtesting](/uploads/9a42380d827891db7125cdfad88a59c5/swtesting.PNG)
+![swtesting](/uploads/2956a060a7d3d602ae99f668642f6bca/swtesting.PNG)
 
 ## 2. 정적 테스팅
 
