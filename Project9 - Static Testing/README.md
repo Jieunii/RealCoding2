@@ -1,4 +1,4 @@
-# Personal Project9 : Software Testing(2020.08.18)
+# Personal Project9 : Static Testing(2020.08.18)
 
 ## 1. Software Testing
 

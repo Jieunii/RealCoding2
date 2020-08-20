@@ -30,4 +30,4 @@
 * `ledThreads`
 
 ### Project 9(2020.08.18)
-* `Software Testing`
+* `Static Testing`
