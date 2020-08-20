@@ -31,3 +31,6 @@
 
 ### Project 9(2020.08.18)
 * `Static Testing`
+
+### Project 10(2020.08.20)
+* `Dynamic Test`
