@@ -30,9 +30,12 @@
 
 ## 3. Code Inspector
 
-### 3.1 실습
+### 3.1 개발 코드 MISRA-C 2012 코딩규칙 검사
 1. 수정 전 위배사항  
 ![91](/uploads/f69adacfe0260f1f68d326c53a9ff51d/91.PNG)
 
 2. 수정 후 위배사항  
 ![45](/uploads/1db559f2f19e96624f096de05ad9db86/45.PNG)
+
+### 3.2 개발 코드 MISRA-C 2012 코딩규칙 리포트
+1. [violations](https://git.ajou.ac.kr/Jieuni/battle_c/-/blob/master/Project9%20-%20Software%20Testing/violations.pdf)
